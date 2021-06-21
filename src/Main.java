@@ -31,8 +31,6 @@ public class Main {
 
         System.out.printf("You choice %s. Your character traits are %s\n\n",player.getName(),player);
 
-        player.setTotalMoney(999);
-
         do {
             System.out.println("Where do you wanna go? (1 Safe House, 2 Market, 3 Cave, 4 Forest, 5 River, 6 Mine, 0 Check Win)");
             String query = scanner.nextLine();
@@ -74,33 +72,6 @@ public class Main {
         }while (!player.isGameEnd());
 
         System.out.println("Congratulations you have collected all the items and finished the game");
-
-
-/*
-        BattleLocation battleLocation = new Forest(player);
-       // battleLocation.setPlayer(player);
-        player.setHealthPoint(999);
-        battleLocation.fight();
-
-        battleLocation.fight();
-
-        battleLocation = new Cave(player);
-        battleLocation.fight();
-
-        System.out.println("FORESETE TERAR GIRDI");
-        battleLocation = new Forest(player);
-        battleLocation.fight();*/
-/*
-
-        System.out.println(player.getHealthPoint());
-        player.setHealthPoint(3);
-        System.out.println(player.getHealthPoint());
-        SafeHouse safeHouse = new SafeHouse(player);
-        System.out.println(player.getHealthPoint());
-
-        Market market = new Market(player);
-        //Characters.Inventory inventory = new Characters.Inventory();
-*/
 
     }
 }
