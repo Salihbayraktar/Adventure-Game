@@ -59,7 +59,6 @@ public class Main {
                 }
             }
         }
-
         System.out.println("Congratulations you have collected all the items and finished the game");
 
     }
