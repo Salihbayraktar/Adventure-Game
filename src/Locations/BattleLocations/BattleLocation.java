@@ -33,7 +33,7 @@ public abstract class BattleLocation extends Location {
     public void fight() {
         Scanner scanner = new Scanner(System.in);
 
-        if (!"null".equals(itemName)) {
+        if (itemName != null) {
             if (player.getInventory().getRequiredItems().get(itemName)) {
                 System.out.printf("You already cleaned %s and got the %s \n", locationName, itemName);
                 System.out.println("Do you still wanna go inside for gold? (1 Yes : 0 No)");
@@ -81,7 +81,7 @@ public abstract class BattleLocation extends Location {
                     } else {
                         System.out.printf("Congratulations you cleaned the %s \n", locationName);
 
-                        if (!"null".equals(itemName) && !player.getInventory().getRequiredItems().get(itemName)) {
+                        if (itemName != null && !player.getInventory().getRequiredItems().get(itemName)) {
 
                             player.getInventory().getRequiredItems().replace(itemName, true);
 

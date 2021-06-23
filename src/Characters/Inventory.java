@@ -18,7 +18,7 @@ public class Inventory {
                 requiredItems.put("Water",false);
                 requiredItems.put("Food",false);
                 requiredItems.put("Firewood",false);
-                requiredItems.put("null",true);
+                requiredItems.put(null,true);
 
                 this.weaponName = weaponName;
                 this.armorName = armorName;
